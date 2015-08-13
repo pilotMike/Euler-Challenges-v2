@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22823.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EulerChallenges", "EulerChallenges.csproj", "{A5213878-962C-488C-8BD3-F66A3842BD51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EulerChallengesTest", "..\EulerChallengesTest\EulerChallengesTest.csproj", "{AAA9790C-BA91-41CC-83D3-98F3DBFA6450}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EulerTools", "..\EulerTools\EulerTools.csproj", "{9F1914DB-0C84-472B-839C-26AC39369E3B}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "EulerTools_FSharp", "..\EulerTools_FSharp\EulerTools_FSharp.fsproj", "{B6609C89-83B2-4257-BEB4-CEB4404D5865}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EulerToolsTests", "..\EulerToolsTests\EulerToolsTests.csproj", "{E03B8F97-8C10-4482-8CA7-D8F5633DC3CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5213878-962C-488C-8BD3-F66A3842BD51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5213878-962C-488C-8BD3-F66A3842BD51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5213878-962C-488C-8BD3-F66A3842BD51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5213878-962C-488C-8BD3-F66A3842BD51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAA9790C-BA91-41CC-83D3-98F3DBFA6450}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAA9790C-BA91-41CC-83D3-98F3DBFA6450}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAA9790C-BA91-41CC-83D3-98F3DBFA6450}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAA9790C-BA91-41CC-83D3-98F3DBFA6450}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F1914DB-0C84-472B-839C-26AC39369E3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F1914DB-0C84-472B-839C-26AC39369E3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F1914DB-0C84-472B-839C-26AC39369E3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F1914DB-0C84-472B-839C-26AC39369E3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6609C89-83B2-4257-BEB4-CEB4404D5865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6609C89-83B2-4257-BEB4-CEB4404D5865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6609C89-83B2-4257-BEB4-CEB4404D5865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6609C89-83B2-4257-BEB4-CEB4404D5865}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E03B8F97-8C10-4482-8CA7-D8F5633DC3CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E03B8F97-8C10-4482-8CA7-D8F5633DC3CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E03B8F97-8C10-4482-8CA7-D8F5633DC3CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E03B8F97-8C10-4482-8CA7-D8F5633DC3CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

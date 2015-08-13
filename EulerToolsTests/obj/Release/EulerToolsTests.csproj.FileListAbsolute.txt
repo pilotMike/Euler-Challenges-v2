@@ -1,0 +1,18 @@
+C:\Users\dileom\Desktop\OneDrive-2015-07-24\EulerToolsTests\bin\Release\EulerToolsTests.dll
+C:\Users\dileom\Desktop\OneDrive-2015-07-24\EulerToolsTests\bin\Release\EulerToolsTests.pdb
+C:\Users\dileom\Desktop\OneDrive-2015-07-24\EulerToolsTests\bin\Release\EulerTools.dll
+C:\Users\dileom\Desktop\OneDrive-2015-07-24\EulerToolsTests\bin\Release\Combinatorics.dll
+C:\Users\dileom\Desktop\OneDrive-2015-07-24\EulerToolsTests\bin\Release\EulerTools.pdb
+C:\Users\dileom\Desktop\OneDrive-2015-07-24\EulerToolsTests\bin\Release\Combinatorics.pdb
+C:\Users\dileom\Desktop\OneDrive-2015-07-24\EulerToolsTests\bin\Release\Combinatorics.xml
+C:\Users\dileom\Desktop\OneDrive-2015-07-24\EulerToolsTests\obj\Release\EulerToolsTests.csprojResolveAssemblyReference.cache
+C:\Users\dileom\Desktop\OneDrive-2015-07-24\EulerToolsTests\obj\Release\EulerToolsTests.dll
+C:\Users\dileom\Desktop\OneDrive-2015-07-24\EulerToolsTests\obj\Release\EulerToolsTests.pdb
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerToolsTests\bin\Release\EulerToolsTests.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerToolsTests\bin\Release\EulerToolsTests.pdb
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerToolsTests\bin\Release\EulerTools.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerToolsTests\bin\Release\Combinatorics.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerToolsTests\bin\Release\EulerTools.pdb
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerToolsTests\obj\Release\EulerToolsTests.csprojResolveAssemblyReference.cache
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerToolsTests\obj\Release\EulerToolsTests.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerToolsTests\obj\Release\EulerToolsTests.pdb

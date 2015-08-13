@@ -1,0 +1,12 @@
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerTools\CodeEvalChallengesTest\bin\Release\CodeEvalChallengesTest.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerTools\CodeEvalChallengesTest\bin\Release\CodeEvalChallengesTest.pdb
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerTools\CodeEvalChallengesTest\bin\Release\CodeEvalChallenges.exe
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerTools\CodeEvalChallengesTest\bin\Release\EulerTools.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerTools\CodeEvalChallengesTest\bin\Release\Combinatorics.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerTools\CodeEvalChallengesTest\bin\Release\CodeEvalChallenges.pdb
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerTools\CodeEvalChallengesTest\bin\Release\EulerTools.pdb
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerTools\CodeEvalChallengesTest\obj\Release\CodeEvalChallengesTest.csprojResolveAssemblyReference.cache
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerTools\CodeEvalChallengesTest\obj\Release\CodeEvalChallengesTest.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerTools\CodeEvalChallengesTest\obj\Release\CodeEvalChallengesTest.pdb
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerTools\CodeEvalChallengesTest\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerTools\CodeEvalChallengesTest\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml

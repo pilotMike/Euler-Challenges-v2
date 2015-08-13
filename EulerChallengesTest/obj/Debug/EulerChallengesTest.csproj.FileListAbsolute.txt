@@ -1,0 +1,38 @@
+G:\OneDrive\Projects\Euler Challenges\EulerChallenges\EulerChallengesTest\bin\Debug\EulerChallengesTest.dll
+G:\OneDrive\Projects\Euler Challenges\EulerChallenges\EulerChallengesTest\bin\Debug\EulerChallengesTest.pdb
+G:\OneDrive\Projects\Euler Challenges\EulerChallenges\EulerChallengesTest\bin\Debug\EulerChallenges.exe
+G:\OneDrive\Projects\Euler Challenges\EulerChallenges\EulerChallengesTest\bin\Debug\EulerTools.dll
+G:\OneDrive\Projects\Euler Challenges\EulerChallenges\EulerChallengesTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+G:\OneDrive\Projects\Euler Challenges\EulerChallenges\EulerChallengesTest\bin\Debug\Combinatorics.dll
+G:\OneDrive\Projects\Euler Challenges\EulerChallenges\EulerChallengesTest\bin\Debug\EulerChallenges.pdb
+G:\OneDrive\Projects\Euler Challenges\EulerChallenges\EulerChallengesTest\bin\Debug\EulerTools.pdb
+G:\OneDrive\Projects\Euler Challenges\EulerChallenges\EulerChallengesTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+G:\OneDrive\Projects\Euler Challenges\EulerChallenges\EulerChallengesTest\bin\Debug\Combinatorics.pdb
+G:\OneDrive\Projects\Euler Challenges\EulerChallenges\EulerChallengesTest\bin\Debug\Combinatorics.xml
+G:\OneDrive\Projects\Euler Challenges\EulerChallenges\EulerChallengesTest\obj\Debug\EulerChallengesTest.csprojResolveAssemblyReference.cache
+G:\OneDrive\Projects\Euler Challenges\EulerChallenges\EulerChallengesTest\obj\Debug\EulerChallengesTest.dll
+G:\OneDrive\Projects\Euler Challenges\EulerChallenges\EulerChallengesTest\obj\Debug\EulerChallengesTest.pdb
+G:\OneDrive\Projects\Euler Challenges v2\EulerChallengesTest\obj\Debug\EulerChallengesTest.csprojResolveAssemblyReference.cache
+G:\OneDrive\Projects\Euler Challenges v2\EulerChallengesTest\obj\Debug\EulerChallengesTest.dll
+G:\OneDrive\Projects\Euler Challenges v2\EulerChallengesTest\obj\Debug\EulerChallengesTest.pdb
+G:\OneDrive\Projects\Euler Challenges v2\EulerChallengesTest\bin\Debug\EulerChallengesTest.dll
+G:\OneDrive\Projects\Euler Challenges v2\EulerChallengesTest\bin\Debug\EulerChallengesTest.pdb
+G:\OneDrive\Projects\Euler Challenges v2\EulerChallengesTest\bin\Debug\EulerChallenges.exe
+G:\OneDrive\Projects\Euler Challenges v2\EulerChallengesTest\bin\Debug\EulerTools.dll
+G:\OneDrive\Projects\Euler Challenges v2\EulerChallengesTest\bin\Debug\Combinatorics.dll
+G:\OneDrive\Projects\Euler Challenges v2\EulerChallengesTest\bin\Debug\EulerChallenges.pdb
+G:\OneDrive\Projects\Euler Challenges v2\EulerChallengesTest\bin\Debug\EulerTools.pdb
+G:\OneDrive\Projects\Euler Challenges v2\EulerChallengesTest\bin\Debug\Combinatorics.pdb
+G:\OneDrive\Projects\Euler Challenges v2\EulerChallengesTest\bin\Debug\Combinatorics.xml
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerChallengesTest\bin\Debug\EulerChallengesTest.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerChallengesTest\bin\Debug\EulerChallengesTest.pdb
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerChallengesTest\bin\Debug\EulerChallenges.exe
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerChallengesTest\bin\Debug\EulerTools.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerChallengesTest\bin\Debug\Combinatorics.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerChallengesTest\bin\Debug\EulerChallenges.pdb
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerChallengesTest\bin\Debug\EulerTools.pdb
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerChallengesTest\bin\Debug\Combinatorics.pdb
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerChallengesTest\bin\Debug\Combinatorics.xml
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerChallengesTest\obj\Debug\EulerChallengesTest.csprojResolveAssemblyReference.cache
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerChallengesTest\obj\Debug\EulerChallengesTest.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerChallengesTest\obj\Debug\EulerChallengesTest.pdb
