@@ -21,3 +21,15 @@ C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\CodeEvalChalleng
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\CodeEvalChallenges\bin\Debug\Combinatorics.pdb
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\CodeEvalChallenges\bin\Debug\Combinatorics.xml
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\CodeEvalChallenges\bin\Debug\TextFile.txt
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\CodeEvalChallenges\bin\Debug\TextFile.txt
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\CodeEvalChallenges\bin\Debug\CodeEvalChallenges.exe.config
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\CodeEvalChallenges\bin\Debug\CodeEvalChallenges.exe
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\CodeEvalChallenges\bin\Debug\CodeEvalChallenges.pdb
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\CodeEvalChallenges\bin\Debug\EulerTools.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\CodeEvalChallenges\bin\Debug\Combinatorics.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\CodeEvalChallenges\bin\Debug\EulerTools.pdb
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\CodeEvalChallenges\bin\Debug\Combinatorics.pdb
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\CodeEvalChallenges\bin\Debug\Combinatorics.xml
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\CodeEvalChallenges\obj\Debug\CodeEvalChallenges.csprojResolveAssemblyReference.cache
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\CodeEvalChallenges\obj\Debug\CodeEvalChallenges.exe
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\CodeEvalChallenges\obj\Debug\CodeEvalChallenges.pdb

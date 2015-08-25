@@ -37,3 +37,16 @@ C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerTools_FShar
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerTools_FSharp\obj\Debug\EulerTools_FSharp.fsprojResolveAssemblyReference.cache
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerTools_FSharp\obj\Debug\EulerTools_FSharp.dll
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerTools_FSharp\obj\Debug\EulerTools_FSharp.pdb
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools_FSharp\bin\Debug\EulerTools_FSharp.XML
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools_FSharp\bin\Debug\EulerTools_FSharp.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools_FSharp\bin\Debug\EulerTools_FSharp.pdb
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools_FSharp\bin\Debug\EulerTools.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools_FSharp\bin\Debug\FSharp.Core.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools_FSharp\bin\Debug\Combinatorics.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools_FSharp\bin\Debug\EulerTools.pdb
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools_FSharp\bin\Debug\FSharp.Core.xml
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools_FSharp\bin\Debug\Combinatorics.pdb
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools_FSharp\bin\Debug\Combinatorics.xml
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools_FSharp\obj\Debug\EulerTools_FSharp.fsprojResolveAssemblyReference.cache
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools_FSharp\obj\Debug\EulerTools_FSharp.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools_FSharp\obj\Debug\EulerTools_FSharp.pdb

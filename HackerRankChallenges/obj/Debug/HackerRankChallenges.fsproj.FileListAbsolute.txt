@@ -6,3 +6,11 @@ C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\HackerRankChalle
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\HackerRankChallenges\bin\Debug\FSharp.Core.xml
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\HackerRankChallenges\obj\Debug\HackerRankChallenges.exe
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\HackerRankChallenges\obj\Debug\HackerRankChallenges.pdb
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\HackerRankChallenges\bin\Debug\HackerRankChallenges.XML
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\HackerRankChallenges\obj\Debug\HackerRankChallenges.exe
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\HackerRankChallenges\obj\Debug\HackerRankChallenges.pdb
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\HackerRankChallenges\bin\Debug\HackerRankChallenges.exe.config
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\HackerRankChallenges\bin\Debug\HackerRankChallenges.exe
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\HackerRankChallenges\bin\Debug\HackerRankChallenges.pdb
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\HackerRankChallenges\bin\Debug\FSharp.Core.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\HackerRankChallenges\bin\Debug\FSharp.Core.xml

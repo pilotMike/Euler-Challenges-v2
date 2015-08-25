@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <Compile Include="Data.fs" />
     <Compile Include="File1.fs" />
     <Compile Include="Challenges.fs" />
     <Compile Include="Program.fs" />

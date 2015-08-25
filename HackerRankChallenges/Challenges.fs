@@ -4,6 +4,8 @@ open System
 
 type IChallenge<'T> =
     abstract member Run : 'T
+type IChallengeSeq<'a> =
+    abstract member Run : seq<'a>
 
 type ArrayOfNElements(input:string) =
     let input = Int32.Parse input
@@ -47,11 +49,22 @@ type EvaluatingEtoX(input:string) =
           // c# way: (variables.Select((v, i) => expand(v, i)).Sum() + 1).ToString();
 
  
- type FractalTrees(input:string) =
-    let iterations = System.Int32.Parse input
-    let lineLength = 100
-
-    interface IChallenge<string> with
-        member this.Run =
+// type FractalTrees(input:string) =
+//    let iterations = System.Int32.Parse input
+//    let lineLength = 100
+//
+//    interface IChallenge<string> with
+//        member this.Run =
             
-        
+type StringCompression(input:string) =
+    interface IChallengeSeq<string> with
+        member this.Run =
+            let rec compress compressed (remainingText:string) =
+                if remainingText.Length = 0 then compressed
+                else
+                    let currentChar = remainingText.[0]
+                    let count = remainingText |> Seq.takeWhile (fun s -> s = currentChar) |> Seq.length
+                    let newlyCompressed = if count = 1 then currentChar.ToString() else currentChar.ToString() + count.ToString()
+                    compress (compressed + newlyCompressed) (remainingText.Substring(count))
+            let result = compress "" input
+            [result] |> List.toSeq
