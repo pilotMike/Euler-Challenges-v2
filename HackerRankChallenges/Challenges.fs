@@ -45,4 +45,13 @@ type EvaluatingEtoX(input:string) =
             let expand n i = (pown n i) / i
             variables |> Seq.mapi (fun i v -> expand v i) |> fun (list) -> (Seq.sum list) + 1|> fun x -> x.ToString()
           // c# way: (variables.Select((v, i) => expand(v, i)).Sum() + 1).ToString();
+
+ 
+ type FractalTrees(input:string) =
+    let iterations = System.Int32.Parse input
+    let lineLength = 100
+
+    interface IChallenge<string> with
+        member this.Run =
+            
         
