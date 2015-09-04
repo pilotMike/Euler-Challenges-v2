@@ -68,3 +68,4 @@ type StringCompression(input:string) =
                     compress (compressed + newlyCompressed) (remainingText.Substring(count))
             let result = compress "" input
             [result] |> List.toSeq
+

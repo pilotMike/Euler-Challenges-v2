@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EulerTools", "EulerTools.csproj", "{9F1914DB-0C84-472B-839C-26AC39369E3B}"
 EndProject
@@ -23,6 +23,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EulerToolsTests", "..\EulerToolsTests\EulerToolsTests.csproj", "{E03B8F97-8C10-4482-8CA7-D8F5633DC3CB}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "HackerRankChallenges", "..\HackerRankChallenges\HackerRankChallenges.fsproj", "{BDDE4D51-96AA-4C59-90A7-D5F383F0CAB5}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "HackerRankChallengesTests", "..\HackerRankChallengesTests\HackerRankChallengesTests.fsproj", "{635E2324-FF1A-45A6-877E-91F745465C4C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -62,6 +64,10 @@ Global
 		{BDDE4D51-96AA-4C59-90A7-D5F383F0CAB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDDE4D51-96AA-4C59-90A7-D5F383F0CAB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDDE4D51-96AA-4C59-90A7-D5F383F0CAB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{635E2324-FF1A-45A6-877E-91F745465C4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{635E2324-FF1A-45A6-877E-91F745465C4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{635E2324-FF1A-45A6-877E-91F745465C4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{635E2324-FF1A-45A6-877E-91F745465C4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -51,6 +51,7 @@
     <Compile Include="Data.fs" />
     <Compile Include="File1.fs" />
     <Compile Include="Challenges.fs" />
+    <Compile Include="ChallengesAsFunctions.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <PropertyGroup>
