@@ -9,7 +9,7 @@ namespace CodeEvalChallenges
     {
         static void Main(string[] args)
         {
-            var prog = new SumOfIntegers(args[0]);
+            var prog = new JollyJumpers(args[0]);
             var result = prog.Run();
             foreach (var r in result)
             {
@@ -19,48 +19,47 @@ namespace CodeEvalChallenges
         }
     }
 
-    public class SumOfIntegers : IChallenge<int>
+    public class JollyJumpers : IChallenge<string>
     {
-        private IEnumerable<string> _lines;
+        private readonly IEnumerable<Tuple<int, List<int>>> _lines;
 
-        public SumOfIntegers(IEnumerable<string> lines)
+        public JollyJumpers(string file)
         {
-            _lines = lines;
+            _lines = FileHelper.OpenFile(file).Select(line =>
+            {
+                var splits = line.Split(' ').Select(int.Parse).ToArray();
+                return Tuple.Create(splits[0], splits.Skip(1).ToList());
+            });
         }
 
-        public SumOfIntegers(string file)
+        public JollyJumpers(IEnumerable<string> input)
         {
-            _lines = FileHelper.OpenFile(file);
+            _lines = input.Select(line =>
+            {
+                var splits = line.Split(' ').Select(int.Parse).ToArray();
+                return Tuple.Create(splits[0], splits.Skip(1).ToList());
+            });
         }
 
-        public IEnumerable<int> Run()
+        public IEnumerable<string> Run()
         {
             return from line in _lines
-                   let numbers = line.Split(',').Select(int.Parse).ToList()
-                   let greatest = GetGreatest(numbers)
-                   select greatest;
+                   let j = IsJolly(line)
+                   select j ? "Jolly" : "Not jolly";
         }
 
-        private int GetGreatest(IList<int> numbers)
+        private bool IsJolly(Tuple<int, List<int>> line)
         {
-            var dic = numbers.Select((n, i) => Tuple.Create(n, numbers.Skip(i + 1)));
-            var max = 0;
-            foreach (var pair in dic)
+            HashSet<int> diffs = new HashSet<int>();
+            line.Item2.Aggregate((acc, current) =>
             {
-                var otherNumbers = pair.Item2.Reverse();
-                var sum = pair.Item1 + pair.Item2.Sum();
-                var highest = sum;
-                foreach (var on in otherNumbers)
-                {
-                    sum -= on;
-                    if (highest < sum) highest = sum;
-                }
-                if (highest > max) max = highest;
-            }
-            return max;
+                diffs.Add(Math.Abs(acc - current));
+                return current;
+            });
+            return diffs.Count(n => n > 0 && n < line.Item1) == (line.Item1 - 1);
         }
     }
-    
+
     public class FileHelper
     {
         public static IEnumerable<string> OpenFile(string source, FileOpenOptions options = FileOpenOptions.IgnoreEmptyLines)

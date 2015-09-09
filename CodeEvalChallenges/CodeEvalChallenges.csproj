@@ -46,6 +46,7 @@
     <Compile Include="Challenges\BitPositions.cs" />
     <Compile Include="Challenges\DetectingCycles.cs" />
     <Compile Include="Challenges\HighestScore.cs" />
+    <Compile Include="Challenges\JollyJumpers.cs" />
     <Compile Include="Challenges\LongestLines.cs" />
     <Compile Include="Challenges\LowestCommonAcestor.cs" />
     <Compile Include="Challenges\MthToLastElement.cs" />

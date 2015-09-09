@@ -38,3 +38,5 @@ C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\CodeEvalChallengesTest\obj\Debug\CodeEvalChallengesTest.csprojResolveAssemblyReference.cache
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\CodeEvalChallengesTest\obj\Debug\CodeEvalChallengesTest.dll
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\CodeEvalChallengesTest\obj\Debug\CodeEvalChallengesTest.pdb
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\CodeEvalChallengesTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\CodeEvalChallengesTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml

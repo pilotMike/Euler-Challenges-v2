@@ -192,5 +192,14 @@ namespace CodeEvalChallengesTest.Challenges
             var result = new SumOfIntegers(input).Run();
             AssertExtensions.AreEqual(expected, result);
         }
+
+        [TestMethod]
+        public void JollyJumpers()
+        {
+            var input = new[] {"4 1 4 2 3", "3 7 7 8", "9 8 9 7 10 6 12 17 24 38"};
+            var expected = new[] {"Jolly", "Not jolly", "Not jolly"};
+            var result = new JollyJumpers(input).Run();
+            AssertExtensions.AreEqual(expected, result);
+        }
     }
 }
