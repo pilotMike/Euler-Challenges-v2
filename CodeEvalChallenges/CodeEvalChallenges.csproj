@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Challenges\ArrayAbsurdity.cs" />
     <Compile Include="Challenges\BitPositions.cs" />
+    <Compile Include="Challenges\CashRegister.cs" />
     <Compile Include="Challenges\DetectingCycles.cs" />
     <Compile Include="Challenges\HighestScore.cs" />
     <Compile Include="Challenges\JollyJumpers.cs" />
@@ -53,6 +54,7 @@
     <Compile Include="Challenges\NumberOfOnes.cs" />
     <Compile Include="Challenges\PrimePalindrome.cs" />
     <Compile Include="Challenges\RemoveCharacters.cs" />
+    <Compile Include="Challenges\ReverseGroups.cs" />
     <Compile Include="Challenges\ReverseWords.cs" />
     <Compile Include="Challenges\SumOfIntegers.cs" />
     <Compile Include="Helpers\FileHelper.cs" />

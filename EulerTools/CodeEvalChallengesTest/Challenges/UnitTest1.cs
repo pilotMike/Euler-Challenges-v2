@@ -201,5 +201,23 @@ namespace CodeEvalChallengesTest.Challenges
             var result = new JollyJumpers(input).Run();
             AssertExtensions.AreEqual(expected, result);
         }
+
+        [TestMethod]
+        public void CashRegister()
+        {
+            var input = new[] { "15.94;16.00", "17;16", "35;35", "45;50",".01;.05" };
+            var expected = new[] { "NICKEL,PENNY", "ERROR", "ZERO", "FIVE", "PENNY,PENNY,PENNY,PENNY" };
+            var result = new CashRegister(input).Run();
+            AssertExtensions.AreEqual(expected, result);
+        }
+
+        [TestMethod]
+        public void ReverseGroups()
+        {
+            var input = new [] {"1,2,3,4,5;2", "1,2,3,4,5;3"};
+            var expected = new[] {"2,1,4,3,5", "3,2,1,4,5"};
+            var result = new ReverseGroups(input).Run();
+            AssertExtensions.AreEqual(expected, result);
+        }
     }
 }

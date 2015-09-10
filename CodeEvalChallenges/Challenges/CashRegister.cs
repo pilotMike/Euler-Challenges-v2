@@ -1,24 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace CodeEvalChallenges
+namespace CodeEvalChallenges.Challenges
 {
-    public class Program
-    {
-        static void Main(string[] args)
-        {
-            var prog = new CashRegister(args[0]);
-            var result = prog.Run();
-            foreach (var r in result)
-            {
-                Console.WriteLine(r);
-            }
-            Console.ReadLine();
-        }
-    }
-
     public class CashRegister : IChallenge<string>
     {
         private IEnumerable<Tuple<double, double>> _lines;
@@ -49,13 +36,13 @@ namespace CodeEvalChallenges
         {
             return from pair in _lines
                    let change = GetChange(pair.Item1, pair.Item2)
-                   select String.Join(",", change);
+                   select String.Join(",",change);
         }
 
         private IEnumerable<string> GetChange(double cost, double paid)
         {
-            int costi = (int)(cost * Math.Pow(10, 2));
-            int paidi = (int)(paid * Math.Pow(10, 2));
+            int costi = (int) (cost*Math.Pow(10, 2));
+            int paidi = (int) (paid*Math.Pow(10, 2));
 
             if (costi > paidi) return new[] { "ERROR" };
             if (costi == paidi) return new[] { "ZERO" };
@@ -71,32 +58,25 @@ namespace CodeEvalChallenges
         }
     }
 
-    public class FileHelper
-    {
-        public static IEnumerable<string> OpenFile(string source, FileOpenOptions options = FileOpenOptions.IgnoreEmptyLines)
-        {
-            using (StreamReader reader = File.OpenText(source))
-            {
-                while (!reader.EndOfStream)
-                {
-                    string line = reader.ReadLine();
-                    if (options == FileOpenOptions.IgnoreEmptyLines && String.IsNullOrWhiteSpace(line))
-                        continue;
-                    if (line != null)
-                        yield return line;
-                }
-            }
-        }
-    }
+    //public static class CompareFloats
+    //{
+    //    public static unsafe int FloatToInt32Bits(float f)
+    //    {
+    //        return *((int*)&f);
+    //    }
 
-    public enum FileOpenOptions
-    {
-        IgnoreEmptyLines,
-        AllLines
-    }
+    //    public static bool AlmostEqual(float a, float b, int maxDeltaBits)
+    //    {
+    //        int aInt = FloatToInt32Bits(a);
+    //        if (aInt < 0)
+    //            aInt = Int32.MinValue - aInt;
 
-    public interface IChallenge<out T>
-    {
-        IEnumerable<T> Run();
-    }
+    //        int bInt = FloatToInt32Bits(b);
+    //        if (bInt < 0)
+    //            bInt = Int32.MinValue - bInt;
+
+    //        int intDiff = Math.Abs(aInt - bInt);
+    //        return intDiff <= (1 << maxDeltaBits);
+    //    }
+    //}
 }
