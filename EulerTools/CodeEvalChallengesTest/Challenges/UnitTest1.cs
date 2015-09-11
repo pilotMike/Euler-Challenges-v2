@@ -219,5 +219,59 @@ namespace CodeEvalChallengesTest.Challenges
             var result = new ReverseGroups(input).Run();
             AssertExtensions.AreEqual(expected, result);
         }
+
+        [TestMethod]
+        public void DecodeNumbers()
+        {
+            var input = new[] {"12", "123", "26", "126"};
+            var expected = new[] {2, 3, 2, 3};
+            var result = new DecodeNumbers(input).Run();
+            AssertExtensions.AreEqual(expected, result);
+        }
+
+        [TestMethod]
+        public void MinimumCoins()
+        {
+            var input = new[] {11, 20};
+            var expected = new[] {3, 4};
+            var result = new MinimumCoins(input).Run();
+            AssertExtensions.AreEqual(expected, result);
+        }
+
+        [TestMethod]
+        public void OperationParser()
+        {
+            var input = "* + 2 3 4";
+            var result = Operation.Parse(input);
+            Assert.IsTrue(result.Operations.Contains(Operator.Mult));
+            Assert.IsTrue(result.Operations.Contains(Operator.Add));
+        }
+
+        [TestMethod]
+        public void OperationRunnerTest()
+        {
+            var op = Operation.Parse("* + 2 3 4");
+            var result = OperationRunner.Run(op);
+            var expected = 20;
+            Assert.AreEqual(expected, result);
+        }
+
+        [TestMethod]
+        public void OperationRunnerTest1()
+        {
+            var op = Operation.Parse("/ + 10 2 4");
+            var result = OperationRunner.Run(op);
+            var expected = 9;
+            Assert.AreEqual(expected, result);
+        }
+
+        [TestMethod]
+        public void OperationRunnerTest_negative_number()
+        {
+            var op = Operation.Parse("+ -1 2");
+            var result = OperationRunner.Run(op);
+            var expected = 1;
+            Assert.AreEqual(expected, result);
+        }
     }
 }

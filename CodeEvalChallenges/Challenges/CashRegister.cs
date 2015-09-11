@@ -57,26 +57,4 @@ namespace CodeEvalChallenges.Challenges
             return coins;
         }
     }
-
-    //public static class CompareFloats
-    //{
-    //    public static unsafe int FloatToInt32Bits(float f)
-    //    {
-    //        return *((int*)&f);
-    //    }
-
-    //    public static bool AlmostEqual(float a, float b, int maxDeltaBits)
-    //    {
-    //        int aInt = FloatToInt32Bits(a);
-    //        if (aInt < 0)
-    //            aInt = Int32.MinValue - aInt;
-
-    //        int bInt = FloatToInt32Bits(b);
-    //        if (bInt < 0)
-    //            bInt = Int32.MinValue - bInt;
-
-    //        int intDiff = Math.Abs(aInt - bInt);
-    //        return intDiff <= (1 << maxDeltaBits);
-    //    }
-    //}
 }

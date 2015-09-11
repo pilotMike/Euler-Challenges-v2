@@ -1,24 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace CodeEvalChallenges
+namespace CodeEvalChallenges.Challenges
 {
-    public class Program
-    {
-        static void Main(string[] args)
-        {
-            var prog = new PrefixExpressions(args[0]);
-            var result = prog.Run();
-            foreach (var r in result)
-            {
-                Console.WriteLine(r);
-            }
-            Console.ReadLine();
-        }
-    }
-
     public class PrefixExpressions : IChallenge<int>
     {
         private readonly IEnumerable<Operation> _lines;
@@ -29,12 +16,12 @@ namespace CodeEvalChallenges
         public PrefixExpressions(IEnumerable<string> lines)
         {
             _lines = from line in lines
-                     select Operation.Parse(line);
+                select Operation.Parse(line);
         }
         public IEnumerable<int> Run()
         {
             return from o in _lines
-                   select (int)OperationRunner.Run(o);
+                select (int)OperationRunner.Run(o);
         }
     }
 
@@ -54,7 +41,7 @@ namespace CodeEvalChallenges
             // it'd be nice to have F#'s seq.windowed...
             var nums = new Stack<double>(operation.Numbers.Reverse());
             var ops = new Stack<Operator>(operation.Operations);
-
+            
             while (nums.Count > 1)
             {
                 var a = nums.Pop();
@@ -73,9 +60,9 @@ namespace CodeEvalChallenges
                 case Operator.Add:
                     return a + b;
                 case Operator.Div:
-                    return a / (double)b;
+                    return a/(double)b;
                 case Operator.Mult:
-                    return a * b;
+                    return a*b;
                 //case Operator.Sub:
                 //    return a - b;
                 default:
@@ -109,7 +96,7 @@ namespace CodeEvalChallenges
         {
             if (c.Length != 1) return Operator.None;
             var ch = c.ToCharArray()[0];
-            return (Operator)ch;
+            return (Operator) ch;
         }
 
         public static Operation Parse(string text)
@@ -128,34 +115,5 @@ namespace CodeEvalChallenges
             }
             return new Operation(ops, nums);
         }
-    }
-
-    public class FileHelper
-    {
-        public static IEnumerable<string> OpenFile(string source, FileOpenOptions options = FileOpenOptions.IgnoreEmptyLines)
-        {
-            using (StreamReader reader = File.OpenText(source))
-            {
-                while (!reader.EndOfStream)
-                {
-                    string line = reader.ReadLine();
-                    if (options == FileOpenOptions.IgnoreEmptyLines && String.IsNullOrWhiteSpace(line))
-                        continue;
-                    if (line != null)
-                        yield return line;
-                }
-            }
-        }
-    }
-
-    public enum FileOpenOptions
-    {
-        IgnoreEmptyLines,
-        AllLines
-    }
-
-    public interface IChallenge<out T>
-    {
-        IEnumerable<T> Run();
     }
 }

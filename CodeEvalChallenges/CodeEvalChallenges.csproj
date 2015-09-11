@@ -45,13 +45,17 @@
     <Compile Include="Challenges\ArrayAbsurdity.cs" />
     <Compile Include="Challenges\BitPositions.cs" />
     <Compile Include="Challenges\CashRegister.cs" />
+    <Compile Include="Challenges\DecodeNumbers.cs" />
     <Compile Include="Challenges\DetectingCycles.cs" />
     <Compile Include="Challenges\HighestScore.cs" />
     <Compile Include="Challenges\JollyJumpers.cs" />
     <Compile Include="Challenges\LongestLines.cs" />
     <Compile Include="Challenges\LowestCommonAcestor.cs" />
+    <Compile Include="Challenges\MinimumCoins.cs" />
     <Compile Include="Challenges\MthToLastElement.cs" />
     <Compile Include="Challenges\NumberOfOnes.cs" />
+    <Compile Include="Challenges\PenultimateWord.cs" />
+    <Compile Include="Challenges\PrefixExpressions.cs" />
     <Compile Include="Challenges\PrimePalindrome.cs" />
     <Compile Include="Challenges\RemoveCharacters.cs" />
     <Compile Include="Challenges\ReverseGroups.cs" />
