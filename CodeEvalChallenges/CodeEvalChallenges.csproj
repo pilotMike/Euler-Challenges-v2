@@ -60,6 +60,7 @@
     <Compile Include="Challenges\RemoveCharacters.cs" />
     <Compile Include="Challenges\ReverseGroups.cs" />
     <Compile Include="Challenges\ReverseWords.cs" />
+    <Compile Include="Challenges\StringRotation.cs" />
     <Compile Include="Challenges\SumOfIntegers.cs" />
     <Compile Include="Helpers\FileHelper.cs" />
     <Compile Include="Challenges\FizzBuzz.cs" />

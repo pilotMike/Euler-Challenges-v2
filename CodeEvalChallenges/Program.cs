@@ -9,7 +9,7 @@ namespace CodeEvalChallenges
     {
         static void Main(string[] args)
         {
-            var prog = new PrefixExpressions(args[0]);
+            var prog = new StringRotation(args[0]);
             var result = prog.Run();
             foreach (var r in result)
             {
@@ -19,114 +19,35 @@ namespace CodeEvalChallenges
         }
     }
 
-    public class PrefixExpressions : IChallenge<int>
+    public class StringRotation : IChallenge<string>
     {
-        private readonly IEnumerable<Operation> _lines;
-        public PrefixExpressions(string file) : this(FileHelper.OpenFile(file))
-        {
+        private readonly IEnumerable<Tuple<string, string>> _lines;
 
-        }
-        public PrefixExpressions(IEnumerable<string> lines)
+        public StringRotation(IEnumerable<string> lines)
         {
-            _lines = from line in lines
-                     select Operation.Parse(line);
-        }
-        public IEnumerable<int> Run()
-        {
-            return from o in _lines
-                   select (int)OperationRunner.Run(o);
-        }
-    }
-
-    public enum Operator
-    {
-        Mult = '*',
-        Add = '+',
-        //Sub = '-',
-        Div = '/',
-        None
-    }
-
-    public class OperationRunner
-    {
-        public static double Run(Operation operation)
-        {
-            // it'd be nice to have F#'s seq.windowed...
-            var nums = new Stack<double>(operation.Numbers.Reverse());
-            var ops = new Stack<Operator>(operation.Operations);
-
-            while (nums.Count > 1)
-            {
-                var a = nums.Pop();
-                var b = nums.Pop();
-                var op = ops.Pop();
-                var total = Operate(a, b, op);
-                nums.Push(total);
-            }
-            return nums.Pop();
+            _lines = lines.Select(line => line.Split(',')).Select(split => Tuple.Create(split[0], split[1]));
         }
 
-        private static double Operate(double a, double b, Operator op)
+        public StringRotation(string file) : this(FileHelper.OpenFile(file))
         {
-            switch (op)
-            {
-                case Operator.Add:
-                    return a + b;
-                case Operator.Div:
-                    return a / (double)b;
-                case Operator.Mult:
-                    return a * b;
-                //case Operator.Sub:
-                //    return a - b;
-                default:
-                    return 0;
-            }
-        }
-    }
-
-    public class Operation
-    {
-        private readonly IEnumerable<double> _numbers;
-        private readonly IEnumerable<Operator> _operations;
-
-        public Operation(IEnumerable<Operator> ops, IEnumerable<double> nums)
-        {
-            this._operations = ops;
-            this._numbers = nums;
         }
 
-        public IEnumerable<double> Numbers
+        public IEnumerable<string> Run()
         {
-            get { return _numbers; }
+            return from line in _lines
+                   select (IsRotation(line.Item1, line.Item2)) ? "True" : "False";
         }
 
-        public IEnumerable<Operator> Operations
+        private bool IsRotation(string s1, string s2)
         {
-            get { return _operations; }
+            var indexes = s1.Select((c, i) => Tuple.Create(c, i)).Where(t => t.Item1 == s2[0]).Select(t => t.Item2);
+
+            return indexes.Select(index => Rotate(s1, index)).Any(rotation => rotation == s2);
         }
 
-        private static Operator GetOperator(string c)
+        private string Rotate(string s1, int index)
         {
-            if (c.Length != 1) return Operator.None;
-            var ch = c.ToCharArray()[0];
-            return (Operator)ch;
-        }
-
-        public static Operation Parse(string text)
-        {
-            var ops = new List<Operator>();
-            List<double> nums = new List<double>();
-
-            var split = text.Split(' ');
-            foreach (var c in split)
-            {
-                double num;
-                if (double.TryParse(c, out num))
-                    nums.Add(num);
-                else
-                    ops.Add(GetOperator(c));
-            }
-            return new Operation(ops, nums);
+            return s1.Substring(index) + s1.Substring(0, index);
         }
     }
 

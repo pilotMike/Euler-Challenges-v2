@@ -273,5 +273,14 @@ namespace CodeEvalChallengesTest.Challenges
             var expected = 1;
             Assert.AreEqual(expected, result);
         }
+
+        [TestMethod]
+        public void StringRotation()
+        {
+            var input = new[] {"Hello,lloHe", "Basefont,tBasefon"};
+            var expected = new[] {"True", "True"};
+            var result = new StringRotation(input).Run();
+            AssertExtensions.AreEqual(expected, result);
+        }
     }
 }
