@@ -1,32 +1,19 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace CodeEvalChallenges
+namespace CodeEvalChallenges.Challenges
 {
-    public class Program
-    {
-        static void Main(string[] args)
-        {
-            var prog = new StringList(args[0]);
-            var result = prog.Run();
-            foreach (var r in result)
-            {
-                Console.WriteLine(r);
-            }
-            Console.ReadLine();
-        }
-    }
-
     public class StringList : IChallenge<string>
     {
         private readonly IEnumerable<Tuple<int, string>> _lines;
 
         public StringList(IEnumerable<string> lines)
         {
-            this._lines = lines.Select(line =>
+            this._lines = lines.Select(line => 
             {
                 var split = line.Split(',');
                 return Tuple.Create(int.Parse(split[0]), split[1]);
@@ -35,14 +22,14 @@ namespace CodeEvalChallenges
 
         public StringList(string file) : this(FileHelper.OpenFile(file))
         {
-
+            
         }
         public IEnumerable<string> Run()
         {
             return from line in _lines
-                   let chars = line.Item2.ToCharArray()
-                   let variations = new Variations<char>(chars, line.Item1, GenerateOption.WithRepetition).Select(collection => string.Join("", collection)).OrderBy(s => s).Distinct()
-                   select string.Join(",", variations);
+                let chars = line.Item2.ToCharArray()
+                let variations = new Variations<char>(chars, line.Item1, GenerateOption.WithRepetition).Select(collection => string.Join("", collection)).OrderBy(s => s).Distinct()
+                select string.Join(",", variations);
         }
     }
 
@@ -1266,34 +1253,5 @@ namespace CodeEvalChallenges
         /// The lower index of the meta-collection, which is the size of each output collection.
         /// </summary>
         int LowerIndex { get; }
-    }
-
-    public class FileHelper
-    {
-        public static IEnumerable<string> OpenFile(string source, FileOpenOptions options = FileOpenOptions.IgnoreEmptyLines)
-        {
-            using (StreamReader reader = File.OpenText(source))
-            {
-                while (!reader.EndOfStream)
-                {
-                    string line = reader.ReadLine();
-                    if (options == FileOpenOptions.IgnoreEmptyLines && String.IsNullOrWhiteSpace(line))
-                        continue;
-                    if (line != null)
-                        yield return line;
-                }
-            }
-        }
-    }
-
-    public enum FileOpenOptions
-    {
-        IgnoreEmptyLines,
-        AllLines
-    }
-
-    public interface IChallenge<out T>
-    {
-        IEnumerable<T> Run();
     }
 }
