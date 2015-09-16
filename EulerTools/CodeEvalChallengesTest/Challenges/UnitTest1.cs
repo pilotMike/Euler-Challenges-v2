@@ -282,5 +282,14 @@ namespace CodeEvalChallengesTest.Challenges
             var result = new StringRotation(input).Run();
             AssertExtensions.AreEqual(expected, result);
         }
+
+        [TestMethod]
+        public void StringList()
+        {
+            var input = new[] {"1,aa", "2,ab", "3,pop"};
+            var expected = new[] {"a", "aa,ab,ba,bb", "ooo,oop,opo,opp,poo,pop,ppo,ppp"};
+            var result = new StringList(input).Run();
+            AssertExtensions.AreEqual(expected, result);
+        }
     }
 }
