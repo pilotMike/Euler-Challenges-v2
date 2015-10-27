@@ -23,8 +23,11 @@ C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerToolsTests\bin\Debug\EulerTools.dll
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerToolsTests\bin\Debug\Combinatorics.dll
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerToolsTests\bin\Debug\EulerTools.pdb
-C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerToolsTests\bin\Debug\Combinatorics.pdb
-C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerToolsTests\bin\Debug\Combinatorics.xml
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerToolsTests\obj\Debug\EulerToolsTests.csprojResolveAssemblyReference.cache
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerToolsTests\obj\Debug\EulerToolsTests.dll
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerToolsTests\obj\Debug\EulerToolsTests.pdb
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerToolsTests\bin\Debug\EulerTools_FSharp.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerToolsTests\bin\Debug\FSharp.Core.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerToolsTests\bin\Debug\EulerTools_FSharp.pdb
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerToolsTests\bin\Debug\EulerTools_FSharp.xml
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerToolsTests\bin\Debug\FSharp.Core.xml

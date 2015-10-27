@@ -10,15 +10,11 @@ namespace EulerTools.Numbers
 {
     public class Pandigital
     {
-        private static DigitHelper _digitHelper = new DigitHelper();
-
-
-
-        private const int DigitLength = 9;
+private const int DigitLength = 9;
 
         public bool IsPandigital(int multiplicand, int multiplier, int product)
         {
-            var concat = _digitHelper.Concat(_digitHelper.Concat(multiplicand, multiplier), product);
+            var concat = DigitHelper.Concat(DigitHelper.Concat(multiplicand, multiplier), product);
             return IsPandigital(concat);
         }
 
@@ -36,7 +32,7 @@ namespace EulerTools.Numbers
             // 0 is set to true because it is not included.
 
             // first, check to see if we have 9 digits.
-            if (_digitHelper.DigitCount(number) != DigitLength) return false;
+            if (DigitHelper.DigitCount(number) != DigitLength) return false;
 
             int temp = number;
             bool[] nums = new bool[10];
@@ -60,7 +56,7 @@ namespace EulerTools.Numbers
         /// <returns></returns>
         public bool IsPandigitalToOwnDigitCount(int number)
         {
-            int digitCount = _digitHelper.DigitCount(number);
+            int digitCount = DigitHelper.DigitCount(number);
             bool[] nums = new bool[digitCount + 1];
             nums[0] = true;
             int temp = number;
@@ -83,11 +79,10 @@ namespace EulerTools.Numbers
         public IEnumerable<long> GetPandigitalNumbers()
         {
             var numbers = Enumerable.Range(0, 10).ToList();
-            var dh = new DigitHelper();
 
             var perms = new Permutations<int>(numbers, GenerateOption.WithoutRepetition).AsParallel()
                 .Where(list => list[0] != 0)
-                .Select(dh.ConvertToNumber);
+                .Select(DigitHelper.ConvertToNumber);
             return perms;
         }
 

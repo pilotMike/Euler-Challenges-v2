@@ -43,8 +43,6 @@ C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerChallengesTest\bin\Debug\Combinatorics.dll
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerChallengesTest\bin\Debug\EulerChallenges.pdb
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerChallengesTest\bin\Debug\EulerTools.pdb
-C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerChallengesTest\bin\Debug\Combinatorics.pdb
-C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerChallengesTest\bin\Debug\Combinatorics.xml
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerChallengesTest\obj\Debug\EulerChallengesTest.csprojResolveAssemblyReference.cache
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerChallengesTest\obj\Debug\EulerChallengesTest.dll
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerChallengesTest\obj\Debug\EulerChallengesTest.pdb

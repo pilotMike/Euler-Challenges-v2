@@ -77,61 +77,61 @@ type Counter() =
     member x.Reset() = n <- 0
     override x.ToString() = n.ToString()
 
-open FsCheck.Commands
-
-let spec =
-    let inc = 
-        { new ICommand<Counter, int>() with
-            member x.RunActual actual = actual.Inc(); actual
-            member x.RunModel model = model + 1
-            member x.Post (actual, model) = model = actual.Get |@ sprintf "model = %i, actual = %i" model actual.Get
-            override x.ToString() = "inc"}
-    let dec = 
-        { new ICommand<Counter, int>() with
-            member x.RunActual actual = actual.Dec(); actual
-            member x.RunModel model = model - 1
-            member x.Post (actual, model) = model = actual.Get |@ sprintf "model = %i, actual = %i" model actual.Get
-            override x.ToString() = "dec"}
-    { new ISpecification<Counter, int> with
-        member x.Initial() = (new Counter(), 0)
-        member x.GenCommand _ = Gen.elements [inc;dec] }
-
-[<Test>]
-let ``FsCheck test 6a (stateful testing spec)``() =
-    Check.QuickThrowOnFailure (asProperty spec)
-
-// type and spec for FsCheck test 6b (stateful testing command series)
-
-let inc2 = 
-    { new ICommand<Counter, int>() with
-        member x.RunActual actual = actual.Inc(); actual
-        member x.RunModel model = model + 1
-        member x.Post (actual, model) = model = actual.Get |@ sprintf "model = %i, actual = %i" model actual.Get
-        override x.ToString() = "inc"}
-let dec2 = 
-    { new ICommand<Counter, int>() with
-        member x.RunActual actual = actual.Dec(); actual
-        member x.RunModel model = model - 1
-        member x.Post (actual, model) = model = actual.Get |@ sprintf "model = %i, actual = %i" model actual.Get
-        override x.ToString() = "dec"}
-
-let reset = 
-    { new ICommand<Counter, int>() with
-        member x.RunActual actual = actual.Reset(); actual
-        member x.RunModel model = 0
-        member x.Post (actual, model) = model = actual.Get |@ sprintf "model = %i, actual = %i" model actual.Get
-        override x.ToString() = "reset"}
-
-let spec2 genList =
-    { new ISpecification<Counter, int> with
-        member x.Initial() = (new Counter(), 0)
-        member x.GenCommand _ = Gen.elements genList }
-
-
-[<Test>]
-let ``FsCheck test 6b (stateful testing command series)``() =
-    let ``inc, dec, reset`` = [inc2; dec2; reset]
-    Check.QuickThrowOnFailure (asProperty (spec2 ``inc, dec, reset``))
+//open FsCheck.Commands
+//
+//let spec =
+//    let inc = 
+//        { new ICommand<Counter, int>() with
+//            member x.RunActual actual = actual.Inc(); actual
+//            member x.RunModel model = model + 1
+//            member x.Post (actual, model) = model = actual.Get |@ sprintf "model = %i, actual = %i" model actual.Get
+//            override x.ToString() = "inc"}
+//    let dec = 
+//        { new ICommand<Counter, int>() with
+//            member x.RunActual actual = actual.Dec(); actual
+//            member x.RunModel model = model - 1
+//            member x.Post (actual, model) = model = actual.Get |@ sprintf "model = %i, actual = %i" model actual.Get
+//            override x.ToString() = "dec"}
+//    { new ISpecification<Counter, int> with
+//        member x.Initial() = (new Counter(), 0)
+//        member x.GenCommand _ = Gen.elements [inc;dec] }
+//
+//[<Test>]
+//let ``FsCheck test 6a (stateful testing spec)``() =
+//    Check.QuickThrowOnFailure (asProperty spec)
+//
+//// type and spec for FsCheck test 6b (stateful testing command series)
+//
+//let inc2 = 
+//    { new ICommand<Counter, int>() with
+//        member x.RunActual actual = actual.Inc(); actual
+//        member x.RunModel model = model + 1
+//        member x.Post (actual, model) = model = actual.Get |@ sprintf "model = %i, actual = %i" model actual.Get
+//        override x.ToString() = "inc"}
+//let dec2 = 
+//    { new ICommand<Counter, int>() with
+//        member x.RunActual actual = actual.Dec(); actual
+//        member x.RunModel model = model - 1
+//        member x.Post (actual, model) = model = actual.Get |@ sprintf "model = %i, actual = %i" model actual.Get
+//        override x.ToString() = "dec"}
+//
+//let reset = 
+//    { new ICommand<Counter, int>() with
+//        member x.RunActual actual = actual.Reset(); actual
+//        member x.RunModel model = 0
+//        member x.Post (actual, model) = model = actual.Get |@ sprintf "model = %i, actual = %i" model actual.Get
+//        override x.ToString() = "reset"}
+//
+//let spec2 genList =
+//    { new ISpecification<Counter, int> with
+//        member x.Initial() = (new Counter(), 0)
+//        member x.GenCommand _ = Gen.elements genList }
+//
+//
+//[<Test>]
+//let ``FsCheck test 6b (stateful testing command series)``() =
+//    let ``inc, dec, reset`` = [inc2; dec2; reset]
+//    Check.QuickThrowOnFailure (asProperty (spec2 ``inc, dec, reset``))
 
 [<Test>]
 let ``FsUnit test 1``() =

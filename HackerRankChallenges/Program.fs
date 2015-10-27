@@ -42,25 +42,31 @@ namespace HackerRankChallenges
             let textB = Console.ReadLine()
             seq {yield! PrefixCompression textA textB}
 
-        type Challenge() =
+        let stringReductions s :string =
+            let rec reduce (s:string) (n:int) (result:list<char>) :list<char> = 
+                if n = s.Length then
+                    result
+                elif List.exists ((=)s.[n]) result then
+                    reduce s (n+1) result
+                else
+                    reduce s (n+1) (s.[n] :: result)
+    
+            let result = reduce s 0 []
+            List.rev result |> List.toArray |> fun (l) -> String.Join("", l)
 
+
+        type Challenge() =
             [<EntryPoint>]
             static let main argv = 
-//                let input = Console.ReadLine()
-//                let input = Data.StringCompression
-////                let input = "2\n0.0000\n1.0000"
-//                let prog = StringCompression(input)
-//                let run = fun() ->
-//                    let output = (prog :> IChallengeSeq<'a>).Run
-//                    for o in output do
-//                        ignore (printfn "%s" (o.ToString()))
-                
-                let run = fun ()->
-                            let a = PrefixCompression'
-                            for r in a do
-                                Console.WriteLine(r)
+                let result = stringReductions (Console.ReadLine())
+                Console.WriteLine(result)
 
-                benchmark (run)
-                ignore (Console.ReadLine())
+//                let run = fun ()->
+//                            let a = PrefixCompression'
+//                            for r in a do
+//                                Console.WriteLine(r)
+//
+//                benchmark (run)
+//                ignore (Console.ReadLine())
 //                Console.ReadLine()
                 0 // return an integer exit code

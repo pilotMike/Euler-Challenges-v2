@@ -291,5 +291,23 @@ namespace CodeEvalChallengesTest.Challenges
             var result = new StringList(input).Run();
             AssertExtensions.AreEqual(expected, result);
         }
+
+        [TestMethod]
+        public void StackImplementation()
+        {
+            var input = new[] { "1 2 3 4", "10 -2 3 4" };
+            var expected = new[] { "4 2", "4 -2" };
+            var result = new StackImplementation(input).Run();
+            AssertExtensions.AreEqual(expected, result);
+        }
+
+        [TestMethod]
+        public void LongestCommonSubsequence()
+        {
+            var input = new[] {"XMJYAUZ;MZJAWXU"};
+            var expected = "MJAU";
+            var result = new LongestCommonSubsequence(input).Run().First();
+            Assert.AreEqual(expected, result);
+        }
     }
 }

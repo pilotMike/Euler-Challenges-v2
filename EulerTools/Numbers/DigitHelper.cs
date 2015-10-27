@@ -8,6 +8,13 @@ namespace EulerTools.Numbers
 {
     public class DigitHelper
     {
+        public static bool ArePermutations(int a, int b)
+        {
+            var a1 = SplitDigits(a);
+            var b1 = SplitDigits(b);
+            return !a1.Except(b1).Any();
+        }
+
         /// <summary>
         /// Returns the number in a digit at a particular index position,
         /// starting with 0 and from the right.
@@ -42,7 +49,7 @@ namespace EulerTools.Numbers
         /// </summary>
         /// <param name="number"></param>
         /// <returns></returns>
-        public IEnumerable<int> SplitDigits(int number)
+        public static IEnumerable<int> SplitDigits(int number)
         {
             if (number < 10) return new[] {number};
             int length = DigitCount(number);
@@ -84,7 +91,7 @@ namespace EulerTools.Numbers
         /// Receives an IList of integers and puts them into a number, e.g. {1,2,3}
         /// becomes 123 as an int.
         /// </summary>
-        public long ConvertToNumber(IList<int> ints)
+        public static long ConvertToNumber(IList<int> ints)
         {
             long output = ints[0];
             for (int i = 1; i < ints.Count; i++)
@@ -106,7 +113,7 @@ namespace EulerTools.Numbers
         /// <param name="a"></param>
         /// <param name="b"></param>
         /// <returns></returns>
-        public int Concat(int a, int b)
+        public static int Concat(int a, int b)
         {
             int bCount = DigitCount(b);
             int result = a*(int) Math.Pow(10, bCount) + b;
@@ -135,7 +142,7 @@ namespace EulerTools.Numbers
         /// </summary>
         /// <param name="number"></param>
         /// <returns></returns>
-        public int DigitCount(long number)
+        public static int DigitCount(long number)
         {
             if (number == 0) return 1;
             //if (number < 10) return 1; // the method below doesn't work for single digit numbers.
@@ -150,16 +157,17 @@ namespace EulerTools.Numbers
         /// <returns></returns>
         public IEnumerable<int> RotateDigits(int number)
         {
-            var numbers = new List<int> {number};
+            //var numbers = new List<int> {number};
+            yield return number;
             int digitCount = DigitCount(number);
 
             int current = number;
             for (int i = 0; i < digitCount; i++)
             {
                 current = RotateNumber(current);
-                numbers.Add(current);
+                yield return current;
             }
-            return numbers;
+            //return numbers;
         }
 
         /// <summary>

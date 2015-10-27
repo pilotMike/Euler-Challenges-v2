@@ -26,6 +26,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "HackerRankChallenges", "..\
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "HackerRankChallengesTests", "..\HackerRankChallengesTests\HackerRankChallengesTests.fsproj", "{635E2324-FF1A-45A6-877E-91F745465C4C}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "EulerTools_FSharpTests", "..\EulerTools_FSharpTests\EulerTools_FSharpTests.fsproj", "{489D71FA-F291-4085-BB7D-1C9C850582D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -68,6 +70,10 @@ Global
 		{635E2324-FF1A-45A6-877E-91F745465C4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{635E2324-FF1A-45A6-877E-91F745465C4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{635E2324-FF1A-45A6-877E-91F745465C4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{489D71FA-F291-4085-BB7D-1C9C850582D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{489D71FA-F291-4085-BB7D-1C9C850582D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{489D71FA-F291-4085-BB7D-1C9C850582D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{489D71FA-F291-4085-BB7D-1C9C850582D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

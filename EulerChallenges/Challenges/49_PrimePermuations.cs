@@ -25,17 +25,16 @@ namespace EulerChallenges.Challenges
         public string Run()
         {
             var pe = new PrimeEnumerator();
-            var dh = new DigitHelper();
 
             string result = "";
             var pc = new PrimeCalculator();
 
             var query = from p in pe.SkipWhile(p => p<1000).TakeWhile(p => p < 10000)
-                let digits = dh.SplitDigits(p).ToList()
+                let digits = DigitHelper.SplitDigits(p).ToList()
                 let permutations = new Permutations<int>(digits)
                 let backToDigits = 
                     from perm in permutations
-                    let digit = (int) dh.ConvertToNumber(perm)
+                    let digit = (int)DigitHelper.ConvertToNumber(perm)
                     where digit != p && PrimeCalculator.IsPrime(digit) //pc.IsPrimeCached(digit) //
                     select digit
                 select new {p, Permutations = backToDigits};

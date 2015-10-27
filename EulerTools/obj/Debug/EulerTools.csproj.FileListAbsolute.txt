@@ -47,7 +47,6 @@ C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerTools\bin\D
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerTools\bin\Debug\System.Reactive.Interfaces.xml
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerTools\bin\Debug\System.Reactive.Linq.xml
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerTools\bin\Debug\System.Reactive.PlatformServices.xml
-C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\obj\Debug\EulerTools.csprojResolveAssemblyReference.cache
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\obj\Debug\EulerTools.dll
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\obj\Debug\EulerTools.pdb
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\bin\Debug\EulerTools.dll
@@ -56,9 +55,8 @@ C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\bin\Debug\System.Reactive.Interfaces.dll
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\bin\Debug\System.Reactive.Linq.dll
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\bin\Debug\System.Reactive.PlatformServices.dll
-C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\bin\Debug\Combinatorics.pdb
-C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\bin\Debug\Combinatorics.xml
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\bin\Debug\System.Reactive.Core.xml
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\bin\Debug\System.Reactive.Interfaces.xml
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\bin\Debug\System.Reactive.Linq.xml
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\bin\Debug\System.Reactive.PlatformServices.xml
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\obj\Debug\EulerTools.csprojResolveAssemblyReference.cache

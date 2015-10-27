@@ -50,6 +50,7 @@
     <None Include="App.config" />
     <Compile Include="Data.fs" />
     <Compile Include="File1.fs" />
+    <Compile Include="HelperFunctions.fs" />
     <Compile Include="Challenges.fs" />
     <Compile Include="ChallengesAsFunctions.fs" />
     <Compile Include="Program.fs" />

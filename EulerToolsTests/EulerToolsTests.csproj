@@ -53,6 +53,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="AssertExtensions.cs" />
+    <Compile Include="FSharp\ChallengesTests.cs" />
     <Compile Include="Numbers\FactorsHelperTests.cs" />
     <Compile Include="Numbers\PrimeCalculatorTests.cs" />
     <Compile Include="Numbers\CycleDetectionTests.cs" />
@@ -62,6 +63,10 @@
     <ProjectReference Include="..\EulerTools\EulerTools.csproj">
       <Project>{9f1914db-0c84-472b-839c-26ac39369e3b}</Project>
       <Name>EulerTools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EulerTools_FSharp\EulerTools_FSharp.fsproj">
+      <Project>{b6609c89-83b2-4257-beb4-ceb4404d5865}</Project>
+      <Name>EulerTools_FSharp</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

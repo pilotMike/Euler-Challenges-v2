@@ -7,3 +7,13 @@ C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\CodeEvalChalleng
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\CodeEvalChallenges\obj\Release\CodeEvalChallenges.csprojResolveAssemblyReference.cache
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\CodeEvalChallenges\obj\Release\CodeEvalChallenges.exe
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\CodeEvalChallenges\obj\Release\CodeEvalChallenges.pdb
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\CodeEvalChallenges\bin\Release\TextFile.txt
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\CodeEvalChallenges\bin\Release\CodeEvalChallenges.exe.config
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\CodeEvalChallenges\bin\Release\CodeEvalChallenges.exe
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\CodeEvalChallenges\bin\Release\CodeEvalChallenges.pdb
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\CodeEvalChallenges\bin\Release\EulerTools.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\CodeEvalChallenges\bin\Release\Combinatorics.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\CodeEvalChallenges\bin\Release\EulerTools.pdb
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\CodeEvalChallenges\obj\Release\CodeEvalChallenges.csprojResolveAssemblyReference.cache
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\CodeEvalChallenges\obj\Release\CodeEvalChallenges.exe
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\CodeEvalChallenges\obj\Release\CodeEvalChallenges.pdb

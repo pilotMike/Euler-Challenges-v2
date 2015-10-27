@@ -26,3 +26,16 @@ C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerTools\bin\R
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerTools\obj\Release\EulerTools.csprojResolveAssemblyReference.cache
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerTools\obj\Release\EulerTools.dll
 C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\EulerTools\obj\Release\EulerTools.pdb
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\bin\Release\EulerTools.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\bin\Release\EulerTools.pdb
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\bin\Release\System.Reactive.Core.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\bin\Release\System.Reactive.Interfaces.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\bin\Release\System.Reactive.Linq.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\bin\Release\System.Reactive.PlatformServices.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\bin\Release\System.Reactive.Core.xml
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\bin\Release\System.Reactive.Interfaces.xml
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\bin\Release\System.Reactive.Linq.xml
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\bin\Release\System.Reactive.PlatformServices.xml
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\obj\Release\EulerTools.csprojResolveAssemblyReference.cache
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\obj\Release\EulerTools.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Euler Challenges v2\Euler-Challenges-v2\EulerTools\obj\Release\EulerTools.pdb

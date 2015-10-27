@@ -53,6 +53,8 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Challenges\47_DistinctPrimesFactorsTests.cs" />
+    <Compile Include="Challenges\ChallengesTests.cs" />
+    <Compile Include="Challenges\UnitTest1.cs" />
     <Compile Include="Challenges\_49_PrimePermutationsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

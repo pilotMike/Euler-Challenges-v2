@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using EulerTools.Challenges;
+using EulerTools.Enumerators;
+using EulerTools.Numbers;
 
 namespace EulerChallenges.Challenges
 {
@@ -11,7 +13,11 @@ namespace EulerChallenges.Challenges
     {
         public int Run()
         {
-            throw new NotImplementedException();
+            var result = from n in new InfiniteNumberEnumerator()
+                         let mults = Enumerable.Range(2, 5).Select(e => n * e)
+                         where mults.All(m => DigitHelper.ArePermutations(m, n))
+                         select n;
+            return result.First();
         }
     }
 }

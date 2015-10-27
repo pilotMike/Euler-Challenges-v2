@@ -45,8 +45,8 @@
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
     <Compile Include="Library1.fs" />
-    <None Include="Script.fsx" />
     <Compile Include="Challenges.fs" />
+    <None Include="Script.fsx" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EulerTools\EulerTools.csproj">

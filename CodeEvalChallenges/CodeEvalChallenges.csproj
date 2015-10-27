@@ -49,6 +49,7 @@
     <Compile Include="Challenges\DetectingCycles.cs" />
     <Compile Include="Challenges\HighestScore.cs" />
     <Compile Include="Challenges\JollyJumpers.cs" />
+    <Compile Include="Challenges\LongestCommonSubsequence.cs" />
     <Compile Include="Challenges\LongestLines.cs" />
     <Compile Include="Challenges\LowestCommonAcestor.cs" />
     <Compile Include="Challenges\MinimumCoins.cs" />
@@ -60,6 +61,8 @@
     <Compile Include="Challenges\RemoveCharacters.cs" />
     <Compile Include="Challenges\ReverseGroups.cs" />
     <Compile Include="Challenges\ReverseWords.cs" />
+    <Compile Include="Challenges\StackImplementation.cs" />
+    <Compile Include="Challenges\StringList.cs" />
     <Compile Include="Challenges\StringRotation.cs" />
     <Compile Include="Challenges\SumOfIntegers.cs" />
     <Compile Include="Helpers\FileHelper.cs" />

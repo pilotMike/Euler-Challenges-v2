@@ -2,14 +2,5 @@
 <doc>
 <assembly><name>EulerTools_FSharp</name></assembly>
 <members>
-<member name="T:Challenges">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:EulerTools_FSharp.Enumerators">
-
-</member>
 </members>
 </doc>
