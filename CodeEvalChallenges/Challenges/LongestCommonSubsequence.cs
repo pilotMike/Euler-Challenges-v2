@@ -19,11 +19,18 @@ namespace CodeEvalChallenges.Challenges
         public IEnumerable<string> Run()
         {
             var matches = from line in _lines
-                select new CommonSubsequenceFinder<char>(line.Item1.ToList(), line.Item2.ToList()).FindSequences().OrderByDescending(a => a.Count).FirstOrDefault();
+                select new CommonSubsequenceFinder<char>(line.Item1.ToList(), line.Item2.ToList())
+                            .FindSequences()
+                            .OrderByDescending(a => a.Count)
+                            .FirstOrDefault();
             return matches.Select(match => String.Join("", match));
         }
     }
 
+    /// <summary>
+    /// Finds all elements that match in sequence between the two collections. 
+    /// Each collection is returned as an IList<T> of elements
+    /// </summary>
     public class CommonSubsequenceFinder<T> 
     {
         private readonly IList<T> _item1;
@@ -36,13 +43,18 @@ namespace CodeEvalChallenges.Challenges
             _item2 = item2;
         }
 
+        /// <summary>
+        /// Returns all elements that match in sequence between the two collections. 
+        /// Each collection is returned as an IList<T> of elements
+        /// </summary>
         public IEnumerable<IList<T>> FindSequences()
         {
             foreach (var a0 in _item1)
             {
                 var matchFinder = new MatchFinder<T>(_item2);
-                var matchingElements = _item1.Skip(_pA).Select(a1 => matchFinder.FindNextMatch(a1)).Where(t => t.Item2 > -1).Select(t => t.Item1);
-
+                var matchingElements = _item1.Skip(_pA).Select(a1 => matchFinder.FindNextMatch(a1))
+                                        .Where(t => t.Item2 > -1)
+                                        .Select(t => t.Item1);
                 _pA++;
                 yield return matchingElements.ToList();
             }
