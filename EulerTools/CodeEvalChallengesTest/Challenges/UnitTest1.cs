@@ -309,5 +309,77 @@ namespace CodeEvalChallengesTest.Challenges
             var result = new LongestCommonSubsequence(input).Run().First();
             Assert.AreEqual(expected, result);
         }
+
+        [TestMethod]
+        public void StringSearchingRegMakesRegex()
+        {
+            var input = "C*Eval";
+            var expected = "C[a-Z]*Eval";
+            var result = StringSearching.GetRegString(input);
+            Assert.AreEqual(expected, result);
+        }
+
+        [TestMethod]
+        public void StringSearchingRegDoesntMakeRegex()
+        {
+            var input = @"C\*Eval";
+            var expected = @"C\*Eval";
+            var result = StringSearching.GetRegString(input);
+            Assert.AreEqual(expected, result);
+        }
+
+        [TestMethod]
+        public void StringSearchingTest()
+        {
+            var input = new[] {"Hello,ell", "This is good, is", "CodeEval,C*Eval", "Old,Young"};
+            var expected = new[] {"true", "true", "true", "false"};
+            var result = new StringSearching(input).Run();
+            AssertExtensions.AreEqual(expected,result);
+        }
+
+        [TestMethod]
+        public void sudoku_grid_parses_grid_from_data()
+        {
+            var input = new[] {"4;1,4,2,3,2,3,1,4,4,2,3,1,3,1,4,2", "4;2,1,3,2,3,2,1,4,1,4,2,3,2,3,4,1"};
+            var boxes = input.Select(line => new Sudoku().ParseGrid(line)).ToList();
+        }
+
+        [TestMethod]
+        public void sudoku_grid_checks_validity()
+        {
+            var input = new[] { "4;1,4,2,3,2,3,1,4,4,2,3,1,3,1,4,2", "4;2,1,3,2,3,2,1,4,1,4,2,3,2,3,4,1" };
+            var expected = new[] {"True", "False"};
+            var results = new Sudoku(input).Run();
+            AssertExtensions.AreEqual(expected, results);
+        }
+
+        [TestMethod]
+        public void sudoku_box_parses_box()
+        {
+            var inputText = "4;1,4,2,3,2,3,1,4,4,2,3,1,3,1,4,2";
+            var inputDim = int.Parse(inputText[0].ToString());
+            var inputNums = inputText.Split(';')[1].Split(',').Select(int.Parse).ToArray();
+            var grid = SudokuGrid.ParseGrid(inputDim, inputNums);
+            var firstBox = grid.Boxes.First();
+            var valid = firstBox.IsValid;
+
+            var expectedNums = new[] {1, 4, 2, 3};
+            Assert.IsTrue(expectedNums.Select((n,i) => firstBox.Numbers[i] == n).All(b => b));
+            AssertExtensions.AreEqual(expectedNums, firstBox.Numbers);
+            Assert.IsTrue(valid);
+        }
+
+        [TestMethod]
+        public void sudoku_box_parses_second_box()
+        {
+            var inputText = "4;1,4,2,3,2,3,1,4,4,2,3,1,3,1,4,2";
+            var inputDim = int.Parse(inputText[0].ToString());
+            var inputNums = inputText.Split(';')[1].Split(',').Select(int.Parse).ToArray();
+            var grid = SudokuGrid.ParseGrid(inputDim, inputNums);
+            var box = grid.Boxes.ElementAt(1);
+
+            var expectedNums = new[] {2, 3, 1, 4};
+            AssertExtensions.AreEqual(expectedNums, box.Numbers);
+        }
     }
 }
