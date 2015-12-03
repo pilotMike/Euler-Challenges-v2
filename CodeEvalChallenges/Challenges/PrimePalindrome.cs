@@ -12,9 +12,10 @@ namespace CodeEvalChallenges.Challenges
     {
         public IEnumerable<int> Run()
         {
-            var palindromeHeler = new PalindromeHelper();
-            return new[] { new PrimeEnumerator().TakeWhile(p => p < 1000)
-                .Where(p => palindromeHeler.IsPalindrome(p)).Max()};
+            throw new NotImplementedException();
+            //var palindromeHeler = new PalindromeHelper();
+            //return new[] { new PrimeEnumerator().TakeWhile(p => p < 1000)
+            //    .Where(p => palindromeHeler.IsPalindrome(p)).Max()};
 
         }
     }

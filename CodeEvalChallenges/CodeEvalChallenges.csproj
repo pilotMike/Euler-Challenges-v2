@@ -43,10 +43,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Challenges\ArrayAbsurdity.cs" />
+    <Compile Include="Challenges\BalancedSmileys.cs" />
     <Compile Include="Challenges\BitPositions.cs" />
     <Compile Include="Challenges\CashRegister.cs" />
     <Compile Include="Challenges\DecodeNumbers.cs" />
     <Compile Include="Challenges\DetectingCycles.cs" />
+    <Compile Include="Challenges\Endianness.cs" />
+    <Compile Include="Challenges\FibonacciSeries.cs" />
     <Compile Include="Challenges\HighestScore.cs" />
     <Compile Include="Challenges\JollyJumpers.cs" />
     <Compile Include="Challenges\LongestCommonSubsequence.cs" />
@@ -55,6 +58,7 @@
     <Compile Include="Challenges\MinimumCoins.cs" />
     <Compile Include="Challenges\MthToLastElement.cs" />
     <Compile Include="Challenges\NumberOfOnes.cs" />
+    <Compile Include="Challenges\OverlappingRectangles.cs" />
     <Compile Include="Challenges\PenultimateWord.cs" />
     <Compile Include="Challenges\PrefixExpressions.cs" />
     <Compile Include="Challenges\PrimePalindrome.cs" />
@@ -64,7 +68,11 @@
     <Compile Include="Challenges\StackImplementation.cs" />
     <Compile Include="Challenges\StringList.cs" />
     <Compile Include="Challenges\StringRotation.cs" />
+    <Compile Include="Challenges\StringSearching.cs" />
+    <Compile Include="Challenges\Sudoku.cs" />
     <Compile Include="Challenges\SumOfIntegers.cs" />
+    <Compile Include="Challenges\UriComparison.cs" />
+    <Compile Include="Challenges\ValidParentheses.cs" />
     <Compile Include="Helpers\FileHelper.cs" />
     <Compile Include="Challenges\FizzBuzz.cs" />
     <Compile Include="Challenges\MultiplicationTables.cs" />

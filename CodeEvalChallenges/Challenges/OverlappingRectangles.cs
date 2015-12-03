@@ -1,35 +1,20 @@
 ﻿using System;
-using System.Collections;
+using System.CodeDom;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Text.RegularExpressions;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace CodeEvalChallenges
+namespace CodeEvalChallenges.Challenges
 {
-    public class Program
-    {
-        static void Main(string[] args)
-        {
-            var prog = new OverlappingRectangles(args[0]);
-            var result = prog.Run();
-            foreach (var r in result)
-            {
-                Console.WriteLine(r);
-            }
-            Console.ReadLine();
-        }
-    }
-
     public class OverlappingRectangles : IChallenge<string>
     {
         private IEnumerable<Tuple<Rectangle, Rectangle>> _pairs;
 
-        public OverlappingRectangles(string file)
-            : this(FileHelper.OpenFile(file))
-        { }
+        public OverlappingRectangles(string file) :this(FileHelper.OpenFile(file))
+        {}
 
-        public OverlappingRectangles(IEnumerable<string> lines)
+        public OverlappingRectangles(IEnumerable<string> lines )
         {
             _pairs = lines.Select(line =>
             {
@@ -88,32 +73,5 @@ namespace CodeEvalChallenges
         }
     }
 
-    public class FileHelper
-    {
-        public static IEnumerable<string> OpenFile(string source, FileOpenOptions options = FileOpenOptions.IgnoreEmptyLines)
-        {
-            using (StreamReader reader = File.OpenText(source))
-            {
-                while (!reader.EndOfStream)
-                {
-                    string line = reader.ReadLine();
-                    if (options == FileOpenOptions.IgnoreEmptyLines && String.IsNullOrWhiteSpace(line))
-                        continue;
-                    if (line != null)
-                        yield return line;
-                }
-            }
-        }
-    }
-
-    public enum FileOpenOptions
-    {
-        IgnoreEmptyLines,
-        AllLines
-    }
-
-    public interface IChallenge<out T>
-    {
-        IEnumerable<T> Run();
-    }
+    
 }

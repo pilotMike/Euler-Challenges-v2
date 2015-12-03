@@ -17,6 +17,10 @@ namespace EulerChallenges.Challenges
     {
         private int _count;
 
+        public _49_PrimePermutations()
+        {
+            _count = 1;
+        }
         public _49_PrimePermutations(int count)
         {
             _count = count;
